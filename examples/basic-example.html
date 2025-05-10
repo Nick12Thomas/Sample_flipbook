@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DFlip Responsive Flipbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Flipbook Stylesheets -->
+  <link href="../dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+  <link href="../dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #1f2937; /* dark background like Tailwind's bg-gray-900 */
+      height: 100%;
+      width: 100%;
+    }
+
+    .flipbook-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    ._df_book {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="flipbook-wrapper">
+  <div class="_df_book"
+       source="example-assets/books/sample.pdf"
+       webgl="true"
+       backgroundcolor="#1f2937"
+       id="df_manual_book">
+  </div>
+</div>
+
+<!-- jQuery -->
+<script src="../dflip/js/libs/jquery.min.js"></script>
+
+<!-- DFlip main JS -->
+<script src="../dflip/js/dflip.min.js"></script>
+
+</body>
+</html>
