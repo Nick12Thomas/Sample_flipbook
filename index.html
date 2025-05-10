@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yuvajanashabdam</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-  <!-- DFlip Stylesheets -->
-  <link rel="stylesheet" href="dflip/css/dflip.min.css">
-  <link rel="stylesheet" href="dflip/css/themify-icons.min.css">
+  <!-- DFlip Styles -->
+  <link rel="stylesheet" href="dflip/css/dflip.min.css" />
+  <link rel="stylesheet" href="dflip/css/themify-icons.min.css" />
 
-  <!-- Inline Custom Styles -->
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #1f2937;
-      font-family: sans-serif;
+      background-color: #ffffff;
     }
 
     .flipbook-wrapper {
@@ -35,6 +33,15 @@
       max-height: 100%;
       margin: auto;
     }
+
+    /* ❌ Completely hide download and menu buttons */
+    .df-control.df-download,
+    .df-control.df-menu,
+    .df-menu,
+    .df-dropdown,
+    .df-dropdown .df-control.df-download {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -43,8 +50,9 @@
   <div class="_df_book"
        source="example-assets/books/sample.pdf"
        webgl="true"
-       backgroundcolor="#1f2937"
+       backgroundcolor="#e3c8cd"
        enablelinks="true"
+       controls="zoom,pageNavigation,fullscreen"
        id="df_manual_book">
   </div>
 </div>
